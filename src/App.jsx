@@ -123,7 +123,7 @@ function App() {
       title: "MSRTC Bus Record Management System",
       tech: "Database Management, System Design",
       year: "2024",
-      link: "https://github.com/kartikumbarkar", // Replace with actual GitHub link
+      link: "https://github.com/kartik-86/MSRTC", //GitHub link
       details: [
         "Designed and maintained a structured system to store detailed records of buses, including mechanical components and related information",
         "Organized component data in table-based format for clear identification of bus parts and placement",
@@ -135,7 +135,7 @@ function App() {
       title: "Chit-Chat Web Application",
       tech: "React, Node.js, WebSockets, Real-time Communication",
       year: "2024",
-      link: "https://github.com/kartikumbarkar", // Replace with actual GitHub link
+      link: "https://github.com/kartik-86/Chatting-App-", //GitHub link
       details: [
         "Designed real-time chat application focused on improving communication and interaction between users",
         "Developed core features including user login, profile creation, and message flow for smooth user experience",
@@ -186,8 +186,8 @@ function App() {
         </div>
 
         <div className="socials">
-          <a href="https://www.linkedin.com/in/kartikumbarkar" target="_blank" rel="noopener noreferrer" className="icon-btn"><Linkedin size={20} /></a>
-          <a href="https://github.com/kartikumbarkar" target="_blank" rel="noopener noreferrer" className="icon-btn"><Github size={20} /></a>
+          <a href="https://www.linkedin.com/in/kartik-umbarkar/" target="_blank" rel="noopener noreferrer" className="icon-btn"><Linkedin size={20} /></a>
+          <a href="https://github.com/kartik-86" target="_blank" rel="noopener noreferrer" className="icon-btn"><Github size={20} /></a>
           <a href="mailto:umbarkarkartik8@gmail.com" className="icon-btn"><Mail size={20} /></a>
           <a href="/Kartik_Tech_Resume.pdf" download="Kartik_Resume.pdf"  className="icon-btn"><FileText size={20} /></a>
         </div>
