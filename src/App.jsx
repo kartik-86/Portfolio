@@ -31,44 +31,43 @@ function App() {
       ],
     };
 
-  const experiences = [
-    {
-      role: "Electronics & Telecommunication Student",
-      company: "Pune Institute of Computer Technology",
-      duration: "Aug 2023 - June 2027",
-      location: "Pune, India",
-      details: [
-        "Currently pursuing Bachelor of Engineering in Electronics and Telecommunication",
-        "Maintaining a CGPA of 7.61 with a focus on applying technical knowledge through practical projects",
-        "Exploring Data Analytics, Web Development, and Investment Research through hands-on learning"
-        
-      ]
-    }
-    {
-      role: "Web Development Intern",
-      company: "ShadowFox",
-      duration: "Feb 2026",
-      location: "Remote",
-      details: [
-        "Developed a responsive dental clinic website using React.js, HTML, CSS, and JavaScript",
-        "Built reusable React components and maintained organized project files for better development and maintainability",
-        "Collaborated with mentors to complete assigned tasks while ensuring quality, responsiveness, and project consistency"
-      ]
-    }  
+ const experiences = [
+  {
+    role: "Electronics & Telecommunication Student",
+    company: "Pune Institute of Computer Technology",
+    duration: "Aug 2023 - June 2027",
+    location: "Pune, India",
+    details: [
+      "Currently pursuing Bachelor of Engineering in Electronics and Telecommunication",
+      "Maintaining a CGPA of 7.61 with a focus on applying technical knowledge through practical projects",
+      "Exploring Data Analytics, Web Development, and Investment Research through hands-on learning"
+    ]
+  },
 
-    {
-      role: "HR Intern",
-      company: "Kirabiz",
-      duration: "Apr 2024 - Jul 2024",
-      location: "Remote",
-      details: [
-        "Managed candidate records, maintained HR documentation, and ensured accurate data entry with confidentiality",
-        "Scheduled and coordinated candidate interviews while communicating with applicants throughout the recruitment process",
-        "Prepared recruitment reports, maintained Excel trackers, and supported the HR team in streamlining hiring and administrative operations"
-      ]
-    }
-  
-  ];
+  {
+    role: "Web Development Intern",
+    company: "ShadowFox",
+    duration: "Feb 2026",
+    location: "Remote",
+    details: [
+      "Developed a responsive dental clinic website using React.js, HTML, CSS, and JavaScript",
+      "Built reusable React components and maintained organized project files for better development and maintainability",
+      "Collaborated with mentors to complete assigned tasks while ensuring quality, responsiveness, and project consistency"
+    ]
+  },
+
+  {
+    role: "HR Intern",
+    company: "Kirabiz",
+    duration: "Apr 2024 - Jul 2024",
+    location: "Remote",
+    details: [
+      "Managed candidate records, maintained HR documentation, and ensured accurate data entry with confidentiality",
+      "Scheduled and coordinated candidate interviews while communicating with applicants throughout the recruitment process",
+      "Prepared recruitment reports, maintained Excel trackers, and supported the HR team in streamlining hiring and administrative operations"
+    ]
+  }
+];
 
   const skillsCategories = [
     {
@@ -281,7 +280,7 @@ const achievements = [
         </div>
         
         <div style={{ marginTop: '15px', fontFamily: 'var(--font-mono)', fontSize: '0.9rem' }}>
-          📞 7020946231
+          //📞 7020946231
         </div>
       </header>
 
