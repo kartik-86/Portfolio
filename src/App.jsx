@@ -77,6 +77,10 @@ function App() {
       items: ["Power BI", "Tableau", "MS Excel", "Google Sheets", "MS Word", "MS PowerPoint", "Git", "GitHub", "VS Code"]
     },
     {
+      title: "Financial Skills",
+      items: ["Equity Markets", "Investment Research", "Market Analysis", "Technical Analysis", "Risk Management", "Financial Analysis"]
+    },
+    {
       title: "Soft Skills", icon: <Layers size={20} />, color: "var(--accent-2)",
       items: ["Communication", "Teamwork", "Leadership", "Time Management"]
     }
