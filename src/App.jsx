@@ -39,8 +39,8 @@ function App() {
       location: "Pune, India",
       details: [
         "Currently pursuing Bachelor of Engineering in Electronics and Telecommunication",
-        "Maintaining CGPA of 7.50 with strong focus on Computer Networks, Operating Systems, and DBMS",
-        "Active problem solver with 500+ DSA problems solved across various platforms"
+        "Maintaining CGPA of 7.61 with strong focus on Computer Networks, Operating Systems, and DBMS",
+        
       ]
     }
   ];
@@ -221,18 +221,21 @@ function App() {
                 building efficient software solutions.
               </p>
               <p>
-                Strong foundation in <strong>Data Structures & Algorithms</strong> with <strong>500+ problems solved</strong> across 
-                competitive programming platforms. Ranked <strong>Top 15 among 15,000+ participants</strong> in GeeksforGeeks course.
+               Aspiring <strong>Data Analyst</strong> with an interest in transforming data into 
+               meaningful insights and understanding patterns that support better decision-making.
               </p>
+
               <p>
-                Full-stack developer experienced in <strong>MERN stack</strong> with projects ranging from 
-                real-time chat applications to database management systems. Interested in 
-                <strong> stock market research</strong>, <strong>artificial intelligence</strong>, and emerging technologies.
+                Passionate about <strong>Investment Research</strong>, exploring equity markets, 
+                company performance, market trends, and developing a deeper understanding of 
+                investment opportunities.
               </p>
+
               <p>
-                Active in community service through <strong>PICT NSS</strong> and represented my team in 
-                <strong> district-level cricket tournaments</strong>, demonstrating leadership and teamwork.
-              </p>
+                Curious and <strong>growth-oriented</strong>, I enjoy learning new technologies, 
+                working on practical projects, and continuously improving my knowledge across 
+                technology, analytics, and financial markets.
+            </p>
             </section>
 
             {/* GITHUB CALENDAR SECTION */}
