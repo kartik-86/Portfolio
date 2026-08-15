@@ -228,7 +228,7 @@ function App() {
             <Mail size={20} />
           </a>
 
-          <a href="/Kartik_Tech_Resume.pdf" download="Kartik_Resume.pdf" className="icon-btn">
+          <a href="/Kartik_Resume_.pdf" download="Kartik_Resume.pdf" className="icon-btn">
             <FileText size={20} />
           </a>
         </div>
