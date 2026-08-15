@@ -84,23 +84,33 @@ function App() {
 
   const achievements = [
     {
-      title: "SSC 10th Grade Excellence", org: "C.S. Kothari High School, Nandura", year: "2021",
+      title: "SSC 10th Grade Excellence",
+      org: "C.S. Kothari High School, Nandura",
+      year: "2021",
       desc: "Secured outstanding 94.00% in Secondary School Certificate examination."
     },
     {
-      title: "HSC 12th Grade Excellence", org: "C.S. Kothari Jr. College, Nandura", year: "2023",
+      title: "HSC 12th Grade Excellence",
+      org: "C.S. Kothari Jr. College, Nandura",
+      year: "2023",
       desc: "Achieved 81.67% in Higher Secondary Certificate examination."
     },
     {
-      title: "District-Level Cricket Representative", org: "Sports", year: "2018",
+      title: "District-Level Cricket Representative",
+      org: "Sports",
+      year: "2018",
       desc: "Represented team in district-level cricket tournaments, demonstrating teamwork, discipline, and consistent performance."
     },
     {
-      title: "Top 15 Rank in GeeksforGeeks Course", org: "GeeksforGeeks", year: "2024",
+      title: "Top 15 Rank in GeeksforGeeks Course",
+      org: "GeeksforGeeks",
+      year: "2024",
       desc: "Ranked in the Top 15 among 15,000+ participants, demonstrating strong problem-solving abilities and consistency."
     },
     {
-      title: "350+ Problems Solved", org: "Multiple Platforms", year: "2024",
+      title: "350+ Problems Solved",
+      org: "Multiple Platforms",
+      year: "2024",
       desc: "Solved 350+ problems across Data Structures & Algorithms, DBMS, and other technical topics through consistent practice."
     }
   ];
@@ -158,7 +168,8 @@ function App() {
 
   const certifications = [
     {
-      event: "Complete Data Analyst Bootcamp From Basics To Advanced", year: "2026",
+      event: "Complete Data Analyst Bootcamp From Basics To Advanced",
+      year: "2026",
       certificate: "https://drive.google.com/file/d/1l_MQJw4wS_yo_3ZhEwYh6yhfKtDIv5j1/view",
       details: [
         "Completed comprehensive training in SQL, Excel, Python, Power BI, Tableau, and Generative AI",
@@ -167,7 +178,8 @@ function App() {
       ]
     },
     {
-      event: "Tata GenAI Powered Data Analytics Job Simulation", year: "2026",
+      event: "Tata GenAI Powered Data Analytics Job Simulation",
+      year: "2026",
       certificate: "https://drive.google.com/file/d/19DN9UGSqd4izUoZxfvsGdWZAlEJuxW5N/view",
       details: [
         "Completed practical tasks involving Generative AI, exploratory data analysis, and AI-powered predictive analysis",
@@ -176,7 +188,8 @@ function App() {
       ]
     },
     {
-      event: "Deloitte Data Analytics Job Simulation", year: "2026",
+      event: "Deloitte Data Analytics Job Simulation",
+      year: "2026",
       certificate: "https://drive.google.com/file/d/1AHVZAs5SPY2PEz3zQhYjH6aADH1L7TyI/view",
       details: [
         "Completed practical tasks in Data Analysis and Forensic Technology using real-world business scenarios",
@@ -188,100 +201,94 @@ function App() {
 
   const tabs = ['about', 'experience', 'stack', 'projects', 'achievements', 'Certifications'];
 
-  const CardList = ({ items, type }) => (
-    <>
-      {items.map((item, index) => (
-        <div key={index} className="card">
-          <div className="card-header">
-            <div>
-              <h3 className="card-title" style={{ fontSize: type === 'achievement' ? '1.1rem' : '1.3rem' }}>
-                {type === 'certification' ? item.event : type === 'project' ? item.title : type === 'achievement' ? item.title : item.role}
-              </h3>
-              {(type === 'experience' || type === 'achievement') && (
-                <small style={{ fontFamily: 'var(--font-mono)', opacity: 0.7 }}>
-                  {type === 'experience' ? item.company : item.org}
-                </small>
-              )}
-              {type === 'experience' && (
-                <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.85rem', background: 'var(--accent-2)', display: 'inline-block', padding: '4px 8px', border: '1px solid black', marginTop: '6px' }}>
-                  {item.company}
-                </div>
-              )}
-              {type === 'project' && (
-                <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', background: 'var(--accent-4)', display: 'inline-block', padding: '2px 6px', border: '1px solid black', marginTop: '5px' }}>
-                  {item.tech}
-                </div>
-              )}
-            </div>
-
-            <div style={{ textAlign: 'right' }}>
-              <span className="card-year">{type === 'experience' ? item.duration : item.year}</span>
-              {type === 'experience' && <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', marginTop: '5px', opacity: 0.8 }}>{item.location}</div>}
-              {type === 'project' && (
-                <a href={item.link} target="_blank" rel="noopener noreferrer" className="icon-btn" style={{ width: '30px', height: '30px', marginTop: '5px', marginLeft: 'auto' }}>
-                  <ExternalLink size={14} />
-                </a>
-              )}
-            </div>
-          </div>
-
-          <ul style={{ marginTop: '15px', paddingLeft: '20px', fontSize: '0.95rem' }}>
-            {item.details.map((point, i) => <li key={i} style={{ marginBottom: '5px' }}>{point}</li>)}
-          </ul>
-
-          {type === 'certification' && (
-            <a href={item.certificate} target="_blank" rel="noopener noreferrer" className="icon-btn"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', marginTop: '10px', padding: '8px 12px', width: 'auto' }}>
-              <FileText size={16} /> Certificate <ExternalLink size={14} />
-            </a>
-          )}
-        </div>
-      ))}
-    </>
-  );
-
   return (
     <div className="container">
+
       <header className="header">
         <div className="profile-pic-container">
           <img src="/kartik.png" alt="Kartik Avatar" className="profile-pic" />
         </div>
-        <h1>KARTIK UMBARKAR</h1>
-        <div className="tagline">ANALYST | Investment Researcher | Developer</div>
 
-        <div className="socials">
-          <a href="https://www.linkedin.com/in/kartik-umbarkar/" target="_blank" rel="noopener noreferrer" className="icon-btn"><Linkedin size={20} /></a>
-          <a href="https://github.com/kartik-86" target="_blank" rel="noopener noreferrer" className="icon-btn"><Github size={20} /></a>
-          <a href="mailto:umbarkarkartik8@gmail.com" className="icon-btn"><Mail size={20} /></a>
-          <a href="/Kartik_Tech_Resume.pdf" download="Kartik_Resume.pdf" className="icon-btn"><FileText size={20} /></a>
+        <h1>KARTIK UMBARKAR</h1>
+
+        <div className="tagline">
+          ANALYST | Investment Researcher | Developer
         </div>
 
-        <div style={{ marginTop: '15px', fontFamily: 'var(--font-mono)', fontSize: '0.9rem' }}>
-          //📞 7020946231
+        <div className="socials">
+          <a href="https://www.linkedin.com/in/kartik-umbarkar/" target="_blank" rel="noopener noreferrer" className="icon-btn">
+            <Linkedin size={20} />
+          </a>
+
+          <a href="https://github.com/kartik-86" target="_blank" rel="noopener noreferrer" className="icon-btn">
+            <Github size={20} />
+          </a>
+
+          <a href="mailto:umbarkarkartik8@gmail.com" className="icon-btn">
+            <Mail size={20} />
+          </a>
+
+          <a href="/Kartik_Tech_Resume.pdf" download="Kartik_Resume.pdf" className="icon-btn">
+            <FileText size={20} />
+          </a>
         </div>
       </header>
 
       <nav className="nav">
         {tabs.map(tab => (
-          <button key={tab} className={`nav-btn ${activeTab === tab ? 'active' : ''}`} onClick={() => setActiveTab(tab)}>
+          <button
+            key={tab}
+            className={`nav-btn ${activeTab === tab ? 'active' : ''}`}
+            onClick={() => setActiveTab(tab)}
+          >
             {tab.toUpperCase()}
           </button>
         ))}
       </nav>
 
       <main>
+
+        {/* ABOUT */}
         {activeTab === 'about' && (
           <>
             <section className="card" style={{ textAlign: 'center', padding: '20px' }}>
-              <p>I'm a 3rd-year <strong>Electronics & Telecommunication Engineering</strong> student at <strong>Pune Institute of Computer Technology</strong> (CGPA: 7.61), passionate about <strong>data analytics</strong> and <strong>market research</strong>.</p>
-              <p>Aspiring <strong>Data Analyst</strong> with an interest in transforming data into meaningful insights and understanding patterns that support better decision-making.</p>
-              <p>Passionate about <strong>Investment Research</strong>, exploring equity markets, company performance, market trends, and developing a deeper understanding of investment opportunities.</p>
-              <p>Curious and <strong>growth-oriented</strong>, I enjoy learning new technologies, working on practical projects, and continuously improving my knowledge across technology, analytics, and financial markets.</p>
+              <p>
+                I'm a 3rd-year <strong>Electronics & Telecommunication Engineering</strong> student at
+                <strong> Pune Institute of Computer Technology</strong> (CGPA: 7.61), passionate about
+                <strong>data analytics</strong> and <strong>market research</strong>.
+              </p>
+
+              <p>
+                Aspiring <strong>Data Analyst</strong> with an interest in transforming data into
+                meaningful insights and understanding patterns that support better decision-making.
+              </p>
+
+              <p>
+                Passionate about <strong>Investment Research</strong>, exploring equity markets,
+                company performance, market trends, and developing a deeper understanding of
+                investment opportunities.
+              </p>
+
+              <p>
+                Curious and <strong>growth-oriented</strong>, I enjoy learning new technologies,
+                working on practical projects, and continuously improving my knowledge across
+                technology, analytics, and financial markets.
+              </p>
             </section>
 
             <div style={{ marginTop: '40px', display: 'flex', justifyContent: 'center' }}>
-              <button onClick={handleCopy} className="nav-btn"
-                style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1rem', padding: '15px 30px', backgroundColor: copied ? 'var(--accent-2)' : 'white' }}>
+              <button
+                onClick={handleCopy}
+                className="nav-btn"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '12px',
+                  fontSize: '1rem',
+                  padding: '15px 30px',
+                  backgroundColor: copied ? 'var(--accent-2)' : 'white'
+                }}
+              >
                 {copied ? <Check size={20} /> : <Mail size={20} />}
                 {copied ? "Email Copied!" : "Get in Touch"}
               </button>
@@ -289,26 +296,89 @@ function App() {
           </>
         )}
 
+        {/* EXPERIENCE */}
         {activeTab === 'experience' && (
           <section>
             <h2 className="section-title">EDUCATION & EXPERIENCE</h2>
-            <CardList items={experiences} type="experience" />
+
+            {experiences.map((exp, index) => (
+              <div key={index} className="card">
+                <div className="card-header">
+                  <div>
+                    <h3 className="card-title" style={{ fontSize: '1.3rem' }}>
+                      {exp.role}
+                    </h3>
+
+                    <div style={{
+                      fontFamily: 'var(--font-mono)',
+                      fontSize: '0.85rem',
+                      background: 'var(--accent-2)',
+                      display: 'inline-block',
+                      padding: '4px 8px',
+                      border: '1px solid black',
+                      marginTop: '6px'
+                    }}>
+                      {exp.company}
+                    </div>
+                  </div>
+
+                  <div style={{ textAlign: 'right' }}>
+                    <span className="card-year">{exp.duration}</span>
+                    <div style={{
+                      fontFamily: 'var(--font-mono)',
+                      fontSize: '0.8rem',
+                      marginTop: '5px',
+                      opacity: 0.8
+                    }}>
+                      {exp.location}
+                    </div>
+                  </div>
+                </div>
+
+                <ul style={{ marginTop: '15px', paddingLeft: '20px', fontSize: '0.95rem' }}>
+                  {exp.details.map((point, i) => (
+                    <li key={i} style={{ marginBottom: '5px' }}>{point}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </section>
         )}
 
+        {/* STACK */}
         {activeTab === 'stack' && (
           <section>
             <h2 className="section-title">TECH STACK</h2>
+
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               {skillsCategories.map((cat, index) => (
                 <div key={index} className="card" style={{ padding: '20px', textAlign: 'left' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '15px', borderBottom: '2px solid #eee', paddingBottom: '10px' }}>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '10px',
+                    marginBottom: '15px',
+                    borderBottom: '2px solid #eee',
+                    paddingBottom: '10px'
+                  }}>
                     <span style={{ color: 'black' }}>{cat.icon}</span>
-                    <h3 style={{ margin: 0, fontSize: '1.2rem', fontFamily: 'var(--font-mono)' }}>{cat.title}</h3>
+                    <h3 style={{ margin: 0, fontSize: '1.2rem', fontFamily: 'var(--font-mono)' }}>
+                      {cat.title}
+                    </h3>
                   </div>
+
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                     {cat.items.map((item, i) => (
-                      <span key={i} style={{ fontFamily: 'var(--font-mono)', fontSize: '0.9rem', fontWeight: 'bold', backgroundColor: cat.color, padding: '8px 14px', border: '2px solid black', boxShadow: '3px 3px 0px 0px black', borderRadius: '4px' }}>
+                      <span key={i} style={{
+                        fontFamily: 'var(--font-mono)',
+                        fontSize: '0.9rem',
+                        fontWeight: 'bold',
+                        backgroundColor: cat.color,
+                        padding: '8px 14px',
+                        border: '2px solid black',
+                        boxShadow: '3px 3px 0px 0px black',
+                        borderRadius: '4px'
+                      }}>
                         {item}
                       </span>
                     ))}
@@ -319,26 +389,136 @@ function App() {
           </section>
         )}
 
-        {activeTab === 'achievements' && (
-          <section>
-            <h2 className="section-title">ACHIEVEMENTS</h2>
-            <CardList items={achievements} type="achievement" />
-          </section>
-        )}
-
+        {/* PROJECTS */}
         {activeTab === 'projects' && (
           <section>
             <h2 className="section-title">PROJECTS</h2>
-            <CardList items={projects} type="project" />
+
+            {projects.map((project, index) => (
+              <div key={index} className="card">
+                <div className="card-header">
+                  <div>
+                    <h3 className="card-title" style={{ fontSize: '1.3rem' }}>
+                      {project.title}
+                    </h3>
+
+                    <div style={{
+                      fontFamily: 'var(--font-mono)',
+                      fontSize: '0.8rem',
+                      background: 'var(--accent-4)',
+                      display: 'inline-block',
+                      padding: '2px 6px',
+                      border: '1px solid black',
+                      marginTop: '5px'
+                    }}>
+                      {project.tech}
+                    </div>
+                  </div>
+
+                  <div style={{ textAlign: 'right' }}>
+                    <span className="card-year">{project.year}</span>
+
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="icon-btn"
+                      style={{
+                        width: '30px',
+                        height: '30px',
+                        marginTop: '5px',
+                        marginLeft: 'auto'
+                      }}
+                    >
+                      <ExternalLink size={14} />
+                    </a>
+                  </div>
+                </div>
+
+                <ul style={{ marginTop: '15px', paddingLeft: '20px', fontSize: '0.95rem' }}>
+                  {project.details.map((point, i) => (
+                    <li key={i} style={{ marginBottom: '5px' }}>{point}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </section>
         )}
 
+        {/* ACHIEVEMENTS */}
+        {activeTab === 'achievements' && (
+          <section>
+            <h2 className="section-title">ACHIEVEMENTS</h2>
+
+            {achievements.map((item, index) => (
+              <div key={index} className="card">
+                <div className="card-header">
+                  <div>
+                    <h3 className="card-title">{item.title}</h3>
+
+                    <small style={{
+                      fontFamily: 'var(--font-mono)',
+                      opacity: 0.7
+                    }}>
+                      {item.org}
+                    </small>
+                  </div>
+
+                  <span className="card-year">{item.year}</span>
+                </div>
+
+                <p style={{ marginTop: '10px', fontSize: '0.95rem' }}>
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </section>
+        )}
+
+        {/* CERTIFICATIONS */}
         {activeTab === 'Certifications' && (
           <section>
             <h2 className="section-title">CERTIFICATIONS</h2>
-            <CardList items={certifications} type="certification" />
+
+            {certifications.map((item, index) => (
+              <div key={index} className="card">
+                <div className="card-header">
+                  <h3 className="card-title" style={{ fontSize: '1.2rem' }}>
+                    {item.event}
+                  </h3>
+
+                  <span className="card-year">{item.year}</span>
+                </div>
+
+                <ul style={{ marginTop: '15px', paddingLeft: '20px', fontSize: '0.95rem' }}>
+                  {item.details.map((point, i) => (
+                    <li key={i} style={{ marginBottom: '5px' }}>{point}</li>
+                  ))}
+                </ul>
+
+                <a
+                  href={item.certificate}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="icon-btn"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    marginTop: '10px',
+                    padding: '8px 12px',
+                    width: 'auto'
+                  }}
+                >
+                  <FileText size={16} />
+                  Certificate
+                  <ExternalLink size={14} />
+                </a>
+              </div>
+            ))}
           </section>
         )}
+
       </main>
 
       <footer>
@@ -349,3 +529,4 @@ function App() {
 }
 
 export default App;
+
